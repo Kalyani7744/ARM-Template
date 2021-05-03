@@ -68,7 +68,7 @@
       "subnetPrefix": "10.0.0.0/24",
       "storageAccountType": "Standard_LRS",
       "publicIPAddressType": "Dynamic",
-      "client": "front",
+      "client": "NSG",
       "vmSize": "Standard_A1",
       "virtualNetworkName": "MyVNET",
       "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]"
@@ -125,7 +125,7 @@
         "name": "[variables('client')]",
         "location": "[parameters('location')]",
         "tags": {
-          "displayName": "NSG - Front End"
+          "displayName": "NSG"
         },
 
         "properties": {
